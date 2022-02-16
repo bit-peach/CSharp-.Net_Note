@@ -1,0 +1,40 @@
+### LINQ
+- Sorting Data 데이터 정렬
+    - OrderBy : 오름차순으로 값 정리
+    - OrderByDescending : 내림차순
+    - ThenBy : 이어서 2차로 오름차순 정리
+    - ThenByDescending : 내림차순
+    - Reverse : 순서를 반대로
+- Set Operations 집합 작업
+    - Distinct/DistinctBy : 중복 값 제거
+    - Except/ExceptBy : 차집합 반환
+    - Intersect/IntersectBy : 교집합
+    - Union/UnionBy : 합집합
+- Filtering Data 데이터 필터링
+    - Where : 조건 기반 값 선택
+- Quantifier Operations 수량자 작업
+    - All : 모든 요소가 조건을 만족하는지 확인
+    - Any : 임의의 요소가 조건을 만족하는지 확인
+    - Contains : 지정된 요소가 들어있는지 확인
+- Projection Operations 프로젝션 작업
+    - Select : 선택
+- Grouping Data 데이터 그룹화
+    - GroupBy : 그룹화
+- Element Operations 요소 작업
+    - ElementAt : 인덱스에 있는 요소 반환
+    - First : 조건에 맞는 요소들 중 첫 번째 요소 반환
+    - FirstOrDefault : 조건에 맞는 첫 번째 요소 반환, 없으면 기본값 반환
+    - Last : 조건에 맞는 요소들 중 마지막 요소 반환
+    - LastOrDefault
+- Converting Data Types 데이터 형식 변환
+    - ToArray : 배열로 변환
+    - ToDictionary
+    - ToList : 리스트로 변환
+- Concatenation Operations 연결 작업
+    - Concat : 두 시퀀스 연결하여 하나의 시퀀스 구성
+- Aggregation Operations 집계 작업
+    - Average : 평균 값 계산
+    - Count : 개수 계산
+    - Max/MaxBy : 최대값 확인
+    - Min/MinBy : 최소값 확인
+    - Sum : 합계 계산
