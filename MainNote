@@ -38,3 +38,30 @@
     - Max/MaxBy : 최대값 확인
     - Min/MinBy : 최소값 확인
     - Sum : 합계 계산
+
+### 문자열
+- 분할
+    - str.split('c')로 사용.
+    - c라는 문자를 중심으로 나눔.
+    - char[] chars = {' ', ',', '.'}과 같이 사용 가능.
+- 연결
+    - '+ OR += 연산자 사용.'
+    - 문자열 보간 사용. $"ex. {str} 사용합니다";
+    - StringBuilder 사용. sb.Append(str)/AppendLine(str)
+    - string.Concat(strs) 사용 / string.Join("a", strs) 사용(a와 함께 연결됨)
+    - strs.Aggregate() 사용.
+- 검색
+    - str.Contains("searchStr") 사용.
+    - str.StartsWith("searchStr", System.StringComparison.CurrentCultureIgnoreCase는 재량) 사용.
+    - str.EndsWith("searchStr", System.StringComparison.CurrentCultureIgnoreCase는 재량) 사용.
+    - 문자열 위치 : str.IndexOf("searchStr") / str.LastIndexOf("searchStr") 사용.
+- 텍스트 변경
+    - str.Replace("oldStr", "newStr") 사용.
+- 공백 제거
+    - str.Trim() : 양쪽 공백 제거
+    - str.TrimStart() : 시작 공백 제거
+    - str.TrimEnd() : 끝 공백 제거
+- 텍스트 제거
+    - str.Remove(str.IndexOf(toRemoveStr), toRemoveStr.Length) 사용.
+- 비교
+    - str1.Equals(str2) / str1.Compare(str2) 사용.
