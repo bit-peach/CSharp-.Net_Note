@@ -80,3 +80,37 @@
                     i는 numStr이 정수로 변환된 값. 
                     변경이 된다면 true, 안 된다면 false.
 - as / is (이후 연산자에서 정리)
+
+### 다형성
+- virtual & override
+    - 버전 관리
+        class A
+        {
+            public virtual void Method() { }
+            public virtual void Method2() { }
+            public virtual void Method3() { }
+        }
+        class B : A
+        {
+            public override void Method() { 재정의; }
+            public new void Method2() { }
+            base.Method3();
+        }
+
+### Delegate & Event
+- delegate 대리자 : 메서드 참조를 포함하고 있는 영역
+    - 만들어져있는 메소드를 델리게이트가 참조하여 사용.
+    - Delegate Chain : 델리게이트 하나로 여러 개 메소드 한 번에 호출.
+- event 이벤트 : delegate 사용 가능.
+    - .Net 클래스 라이브러리에서 이벤트는 EventHandler 대리자 및 EventArgs 기본 클래스를 기반으로 함.
+    - 이벤트를 추가할 때 += 사용.
+    - 이벤트를 해제할 때 -= 사용.
+
+### 한정자
+- const
+    - 상수 선언
+    - 변경할 수 없다
+- static
+    - 위치에 상관없이 프로그램의 시작부터 끝까지 메모리에 할당됨
+    - 어디에서든 값 변경 가능
+    - this 사용한 접근 불가
